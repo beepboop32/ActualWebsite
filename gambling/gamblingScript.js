@@ -1,6 +1,7 @@
 let losses = 0;
 let wins = 0;
 let audios = [new Audio("Stinky.mp3"), new Audio("Yummy.mp3")];
+let emojis = ["🍇", "🍉", "🍊"];
 
 function slotMachine() {
     let slot1 = Math.floor(Math.random() * 3) + 1;
@@ -23,14 +24,14 @@ function animateSlots(finalNumbers, result) {
     const slots = document.getElementById("slots").getElementsByClassName("section");
     let interval = setInterval(() => {
         for (let i = 0; i < slots.length; i++) {
-            slots[i].innerHTML = Math.floor(Math.random() * 3) + 1;
+            slots[i].innerHTML = emojis[Math.floor(Math.random() * 3)];
         }
     }, 50);
 
     setTimeout(() => {
         clearInterval(interval);
         for (let i = 0; i < slots.length; i++) {
-            slots[i].innerHTML = finalNumbers[i];
+            slots[i].innerHTML = emojis[finalNumbers[i]-1];
         }
         updateResults(result);
     }, 1000);
