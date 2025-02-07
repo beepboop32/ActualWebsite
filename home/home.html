@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cardistry 101</title>
+<meta name ="viewport" content="width=device-width, initial-scale=1">
+
+<script src="script.js" defer></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="icon" href="tile058.ico">
+</head>
+<body>
+<header>
+    <h1>Cardistry 101</h1>
+</header>
+
+<section>
+    <div class ="side">
+        <div id="nav">
+            <button onclick="changePage(0)">Shop</button>
+            <button onclick="changePage(1)">Pictures</button>
+            <button onclick="changePage(2)">Gambling</button>
+            <button onclick="changePage(3)">Misc. </button>
+        </div>
+    </div>
+
+    <div class="main">
+        <h2 style="justify-self:center">welcome to cardistry 101!!!</h2>
+        <!--set of images-->
+        <div id="imageCarousel">
+            <div class="images">
+                <img src="cards.jpg" alt="cardistry">
+                <div class="caption">cards</div>
+            </div>
+
+            <div class="images">
+                <img src="gamblingCore.jpg" alt="gambling">
+                <div class="caption">gambling core</div>
+            </div>
+
+            <div class="images">
+                <img src="miau.jpg" alt="cardistry">
+                <div class="caption">MIAU!!111!</div>
+            </div>
+
+            <div class="images">    
+                <img src="HeadphoneCar.jpg" alt="headphone car">
+                <div class="caption">a weh weh weh</div>
+            </div>
+            <!--forward and back buttons-->
+            <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+    </div>
+</section>
+
+<footer>
+    <p>@who needs a footer anyways</p>    
+</footer>
+
+</body>
+</html>
