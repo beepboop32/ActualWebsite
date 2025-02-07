@@ -65,3 +65,21 @@ function playSound(audio) {
         audio.play();
     }
 }
+
+function changePage(page) {
+    switch(page) {
+        case 0:
+            window.location.href = '../home/home.html';
+            break;
+        case 1:
+            window.location.href = 'shopIndex.html';
+            break;
+        case 2:
+            window.location.href = 'picturesIndex.html';
+            break;
+        case 3:
+            window.location.href = 'miscIndex.html';
+            break;
+        
+    }
+}

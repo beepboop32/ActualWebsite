@@ -17,10 +17,40 @@ header {
     outline: 5px solid #867785;
 }
 
-#slotButton button {
+#nav {
+    display: grid;
+    grid-template: "A B C D";
+    gap: 15px;
+    background-color: #b9b6b6;
+    border-radius: 5px;
+    padding: 10px;
+    height: 10vh;
+}
+
+#nav button {
     background-color: #1db6ca;
     color: white;
     border: #3bbdce solid;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: scale 0.3s;
+}
+
+#nav button:hover {
+    background-color: #3bbdce;
+    scale: 1.05;
+}
+
+
+#slotButton button {
+    background-color: #1db6ca;
+    color: white;
+    border: #939494 solid;
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
@@ -54,8 +84,8 @@ footer {
 }
 
 .section {
-    background-color: #3ef76c;
-    border: 2px solid #15ff21;
+    background-color: #95dda7;
+    border: 4px solid #8e8f8e;
     border-radius: 5px;
     padding: 30px;
 }
@@ -63,7 +93,7 @@ footer {
 #gambleButton {
     background-color: #1db6ca;
     color: white;
-    border: #3bbdce solid;
+    border: #848686 solid;
     border-radius: 5px;
     font-size: 15px;
     font-weight: bolder;
@@ -77,9 +107,13 @@ footer {
 #wins, #losses {
     font-size: 20px;
     font-weight: bold;
-    color: #1db6ca;
+    color: #f5f8f8;
+    text-shadow: #2b5238 2px 2px;
     margin-top: 10px;
     text-align: center;
+    background-color: #797a7a;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 #rawr {
